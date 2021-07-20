@@ -357,5 +357,9 @@ footer nav#footer-nav a.active:hover {
     section#body.about #services {
         grid-template-columns: 1fr;
     }
+
+    section#body.work .projects .project:hover {
+        transform:scale(1);
+    }
 }
   
