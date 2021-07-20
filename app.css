@@ -1,5 +1,6 @@
 /* global styles */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -10,12 +11,13 @@
 body, html {
     font-family: 'Poppins';
     text-align: center;
+    font-size: 16px;
     height: 100%;
     width: 100%;
 }
 /* header section */
 header {
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     background: #fdcdff;
@@ -25,7 +27,7 @@ header {
 
 nav#header-nav {
     z-index: 10;
-    position: absolute;
+    position: fixed;
     display: none;
     flex-direction: column;
     top: 0;
@@ -65,7 +67,7 @@ nav#header-nav a.active:hover {
 }
 
 div#toggle {
-    position: absolute;
+    position: fixed;
     z-index: 20;
     top: 20px;
     left: 25px;
@@ -115,8 +117,42 @@ section#body.home {
     justify-content: center;
 }
 
+section#body.home h1 {
+    font-size: 58px;
+    padding: 10px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 800;
+    text-shadow: 4px 4px 5px rgb(255, 255, 255);
+}
+
 section#body.home #body-text {
     padding-bottom: 30px;
+    font-size: 20px;
+}
+
+section#body.team #img-holder {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    padding: 60px 0 200px;
+}
+
+section#body.team #img-holder h3 {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+section#body.team #img-holder div {
+    color: #242286;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+section#body.team #img-holder img {
+    width: 250px;
+    height: auto;
+    border-radius: 125px;
 }
 
 section#body #body-text {
@@ -133,7 +169,7 @@ section#body h1 {
 }
 /* footer section */
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     background: #dbdbdb;
     width: 100%;
@@ -180,6 +216,9 @@ footer nav#footer-nav a.active:hover {
     section#body #body-text {
         padding: 0 20px;
     }
+    section#body.team #img-holder {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 @media screen and (max-width: 600px) {
     section#body #body-text {
@@ -207,6 +246,9 @@ footer nav#footer-nav a.active:hover {
     
     nav#header-nav a {
         font-size: 18px;
+    }
+    section#body.team #img-holder {
+        grid-template-columns: 1fr;
     }
 }
   
