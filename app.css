@@ -33,6 +33,7 @@ header {
     background: #fdcdff;
     padding: 20px;
     border-bottom: 4px solid #242286;
+    z-index: 10;
 }
 
 header #logo-link {
@@ -190,6 +191,29 @@ section#body.about #services i {
     padding-bottom: 20px;
 }
 
+section#body.work .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 40px;
+}
+
+section#body.work .projects .project:hover {
+    transform:scale(.95);
+    transition: 0.3s all;
+}
+
+section#body.work .projects .project div {
+    font-weight: 700;
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+section#body.work .projects .project img {
+    height: auto;
+    width: 500px;
+}
+
 section#body #body-text {
     padding: 0 40px;
     max-width: 800px;
@@ -247,6 +271,20 @@ footer nav#footer-nav a.active:hover {
     font-weight: 500;
 }
 /* media queries */
+@media screen and (max-width: 1200px) {
+    section#body.work .projects .project img {
+        width: 400px;
+        gap: 20;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    section#body.work .projects .project img {
+        width: 300px;
+        gap: 20;
+    }
+}
+
 @media screen and (max-width: 800px) {
     section#body #body-text {
         padding: 0 20px;
@@ -266,6 +304,14 @@ footer nav#footer-nav a.active:hover {
 
     section#body.home h1 {
         font-size: 60px;
+    }
+
+    section#body.work .projects {
+        grid-template-columns: 1fr;
+    }
+
+    section#body.work .projects .project img {
+        width: 400px;
     }
 }
 @media screen and (max-width: 600px) {
