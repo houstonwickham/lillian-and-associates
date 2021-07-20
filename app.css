@@ -25,6 +25,10 @@ header {
     border-bottom: 4px solid #242286;
 }
 
+header #logo-link {
+    text-decoration: none;
+}
+
 nav#header-nav {
     z-index: 10;
     position: fixed;
@@ -104,17 +108,16 @@ section#body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 40px;
+    padding: 100px 40px;
     background: #ffffff;
-    height: 100%;
     justify-content: start;
-    padding-top:100px;
 }
 
 section#body.home {
     background: url(images/home-background.jpg) no-repeat center center / cover;
     padding-top: 0px;
     justify-content: center;
+    height: 100%;
 }
 
 section#body.home h1 {
@@ -155,10 +158,32 @@ section#body.team #img-holder img {
     border-radius: 125px;
 }
 
+section#body.about #body-text {
+    padding-bottom: 20px;
+
+}
+
+section#body.about #services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+section#body.about #services .service:hover {
+    transform:scale(.95);
+    transition: 0.3s all;
+}
+
+section#body.about #services i {
+    font-size: 45px;
+    color: #242286;
+    padding-bottom: 20px;
+}
+
 section#body #body-text {
     padding: 0 40px;
     max-width: 800px;
-    color: #242286;
+    color: #000000;
 }
 
 section#body h1 {
@@ -225,6 +250,10 @@ footer nav#footer-nav a.active:hover {
         grid-template-columns: 1fr 1fr;
     }
 
+    section#body.about #services {
+        grid-template-columns: 1fr 1fr;
+    }
+
     section#body.home h1 {
         font-size: 60px;
     }
@@ -267,6 +296,10 @@ footer nav#footer-nav a.active:hover {
 
     section#body.home h1 {
         font-size: 45px;
+    }
+
+    section#body.about #services {
+        grid-template-columns: 1fr;
     }
 }
   
