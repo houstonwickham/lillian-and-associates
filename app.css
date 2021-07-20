@@ -358,6 +358,10 @@ footer nav#footer-nav a.active:hover {
         grid-template-columns: 1fr;
     }
 
+    section#body.work .projects .project img {
+        width: 300px;
+    }
+
     section#body.work .projects .project:hover {
         transform:scale(1);
     }
