@@ -118,7 +118,7 @@ section#body.home {
 }
 
 section#body.home h1 {
-    font-size: 58px;
+    font-size: 80px;
     padding: 10px;
     font-family: 'Dosis', sans-serif;
     font-weight: 800;
@@ -216,13 +216,26 @@ footer nav#footer-nav a.active:hover {
     section#body #body-text {
         padding: 0 20px;
     }
+
+    section#body.home #body-text {
+        font-size: 16px;
+    }
+
     section#body.team #img-holder {
         grid-template-columns: 1fr 1fr;
+    }
+
+    section#body.home h1 {
+        font-size: 60px;
     }
 }
 @media screen and (max-width: 600px) {
     section#body #body-text {
         padding: 0 10px;
+    }
+
+    section#body.home #body-text {
+        font-size: 14px;
     }
 
     div#logo img {
@@ -247,8 +260,13 @@ footer nav#footer-nav a.active:hover {
     nav#header-nav a {
         font-size: 18px;
     }
+
     section#body.team #img-holder {
         grid-template-columns: 1fr;
+    }
+
+    section#body.home h1 {
+        font-size: 45px;
     }
 }
   
