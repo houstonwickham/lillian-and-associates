@@ -9,6 +9,7 @@
 
 body, html {
     font-family: 'Poppins';
+    text-align: center;
     height: 100%;
     width: 100%;
 }
@@ -19,6 +20,7 @@ header {
     width: 100%;
     background: #fdcdff;
     padding: 20px;
+    border-bottom: 4px solid #242286;
 }
 
 nav#header-nav {
@@ -30,11 +32,12 @@ nav#header-nav {
     padding: 100px 40px 0;
     height: 100%;
     background: #f9f9f9;
+    border-right: 4px solid #242286;
 }
 
 nav#header-nav a {
     padding-bottom: 20px;
-    color: #000000;
+    color: #242286;
     font-size: 22px;
     font-weight: 300;
     text-decoration: none;
@@ -67,6 +70,7 @@ div#toggle {
     top: 20px;
     left: 25px;
     font-size: 30px;
+    color: #242286;
 }
 
 div#toggle:hover {
@@ -91,6 +95,7 @@ div#logo img {
 div#logo #logo-text {
     font-weight: 800;
     font-size: 30px;
+    color: #242286;
 }
 /* body section */
 section#body {
@@ -100,18 +105,31 @@ section#body {
     padding: 40px;
     background: #ffffff;
     height: 100%;
+    justify-content: start;
+    padding-top:100px;
+}
+
+section#body.home {
+    background: url(images/home-background.jpg) no-repeat center center / cover;
+    padding-top: 0px;
     justify-content: center;
+}
+
+section#body.home #body-text {
+    padding-bottom: 30px;
 }
 
 section#body #body-text {
     padding: 0 40px;
     max-width: 800px;
+    color: #242286;
 }
 
 section#body h1 {
     padding: 20px 0;
     font-size: 34px;
     font-weight: 700;
+    color: #242286;
 }
 /* footer section */
 footer {
@@ -120,6 +138,7 @@ footer {
     background: #dbdbdb;
     width: 100%;
     padding: 20px;
+    border-top: 4px solid #242286;
 }
 
 footer nav#footer-nav {
@@ -128,7 +147,7 @@ footer nav#footer-nav {
 }
 
 footer nav#footer-nav a {
-    color: #000000;
+    color: #242286;
     font-size: 16px;
     font-weight: 300;
     text-decoration: none;
